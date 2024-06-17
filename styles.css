@@ -1,36 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     background-color: #000000; /* Schwarzer Hintergrund */
-    color: #FFFFFF; /* Weißer Text */
+    color: #33FF33; /* Neon-Grüner Text */
 }
 
 header {
-    background-color: #FF00FF; /* Pinker Header */
-    color: #000000; /* Schwarzer Text */
+    background-color: #111111; /* Dunkler Header */
+    color: #33FF33; /* Neon-Grüner Text */
     padding: 20px 0;
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
+    border-bottom: 2px solid #33FF33;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #FF00FF; /* Pinkes Menü */
+    background-color: #111111; /* Dunkles Menü */
+    border-bottom: 2px solid #33FF33;
 }
 
 nav a {
-    color: #000000; /* Schwarzer Text */
+    color: #33FF33; /* Neon-Grüner Text */
     padding: 14px 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    border-right: 1px solid #33FF33;
+}
+
+nav a:last-child {
+    border-right: none;
 }
 
 nav a:hover {
-    background-color: #FF69B4; /* Helleres Pink beim Hover */
+    background-color: #222222; /* Helleres Schwarz beim Hover */
 }
 
 main {
@@ -42,10 +49,11 @@ section {
 }
 
 footer {
-    background-color: #FF00FF; /* Pinker Footer */
-    color: #000000; /* Schwarzer Text */
+    background-color: #111111; /* Dunkler Footer */
+    color: #33FF33; /* Neon-Grüner Text */
     text-align: center;
     padding: 10px 0;
+    border-top: 2px solid #33FF33;
     position: fixed;
     width: 100%;
     bottom: 0;
