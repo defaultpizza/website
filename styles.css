@@ -6,18 +6,6 @@ body {
     color: #33FF33; /* Neon-Grüner Text */
 }
 
-        #dashboard {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            /* Hier die Höhe auf auto setzen */
-            height: auto;
-            /* Overflow für Scrollbalken hinzufügen */
-            overflow-y: auto;
-            /* Maximale Höhe, falls gewünscht */
-            max-height: 400px; /* Beispielwert */
-        }
 
 h2 {
     color: #FF00FF; /* Neon-Pinker Text */
