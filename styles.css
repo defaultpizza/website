@@ -6,6 +6,15 @@ body {
     color: #33FF33; /* Neon-Grüner Text */
 }
 
+ #dashboard {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* Hier die Höhe anpassen, oder overflow verwenden */
+    height: auto; /* oder eine bestimmte Höhe in Pixeln setzen */
+    overflow-y: auto; /* Scrollbalken anzeigen, wenn der Inhalt zu groß ist */
+
 h2 {
     color: #FF00FF; /* Neon-Pinker Text */
     font-size: 1.5em; /* Font-Größe für bessere Sichtbarkeit angepasst */
