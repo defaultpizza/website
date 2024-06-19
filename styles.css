@@ -7,10 +7,10 @@ body {
 }
 
 h2 {
-    color:#pink
-    font-size: 1em;
-
+    color: #FF00FF; /* Neon-Pinker Text */
+    font-size: 1.5em; /* Font-Größe für bessere Sichtbarkeit angepasst */
 }
+
 header {
     background-color: #111111; /* Dunkler Header */
     color: #33FF33; /* Neon-Grüner Text */
@@ -62,4 +62,32 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #33FF33;
+    background-color: #000000;
+    color: #33FF33;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #33FF33; /* Neon-Grüner Text */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
