@@ -6,6 +6,11 @@ body {
     color: #33FF33; /* Neon-Grüner Text */
 }
 
+h2 {
+    color:#pink
+    font-size: 1em;
+
+}
 header {
     background-color: #111111; /* Dunkler Header */
     color: #33FF33; /* Neon-Grüner Text */
