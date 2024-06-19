@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OffDroid</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function searchLinks() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const links = document.querySelectorAll('#linkList a');
+
+            links.forEach(link => {
+                const hashtags = link.getAttribute('data-hashtags').toLowerCase();
+                if (hashtags.includes(input)) {
+                    link.style.display = 'block';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,63 +31,23 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
     <main>
+        <section id="home">
+            <h2>Willkommen bei OffDroid</h2>
+            <p>Dies ist der Blog für die neuesten Technik-News und Analysen.</p>
+        </section>
         <section id="dashboard">
-          <p>
-<h1>Xiaomi-Smartphone sicherer machen: Ein Leitfaden für mehr Datenschutz</h1>
-<p></p>Xiaomi-Smartphones bieten viele Funktionen und sind oft preisgünstiger als andere Marken. Allerdings gibt es Bedenken hinsichtlich Datenschutz und Sicherheit. Dieser Leitfaden zeigt Ihnen einfache Schritte, um Ihr Xiaomi-Smartphone sicherer zu machen und Ihre Privatsphäre zu schützen.
-
-<h2>1. MIUI-Datenfreigaben minimieren</h2>
-Xiaomi-Smartphones laufen auf MIUI, einem benutzerdefinierten Android-Betriebssystem. Viele Einstellungen sind standardmäßig aktiviert, um Daten an Xiaomi zu senden. So ändern Sie das:
-<br>
-Gehen Sie zu den Einstellungen.
-Tippen Sie auf „Passwörter & Sicherheit“.
-Wählen Sie „Datenschutz“ und dann „Datennutzung & Diagnosen“.
-Deaktivieren Sie die Option „Senden von Nutzungsstatistiken“.
-<h2>2. Google-Dienste minimieren</h2>
-Google-Dienste sammeln ebenfalls viele Daten. Hier einige Schritte, um dies zu minimieren:
-<br>
-Deaktivieren Sie Google-Standortverlauf:
-<br>
-Öffnen Sie die Google-App, tippen Sie auf Ihr Profilbild und gehen Sie zu „Ihre Daten in Maps“.
-Deaktivieren Sie „Standortverlauf“ und „Aktivitäten verwalten“.
-Anpassung der Google-Sicherheitseinstellungen:
-<br>
-Gehen Sie zu „Einstellungen“, dann „Google“ und „Google-Konto verwalten“.
-Wählen Sie „Daten & Personalisierung“ und deaktivieren Sie „Web- & App-Aktivitäten“ sowie „Personalisierte Werbung“.
-<h2>3. Verwendung eines VPN</h2>
-Ein VPN (Virtual Private Network) schützt Ihre Internetverbindung und verschlüsselt Ihre Daten. Beliebte VPN-Anbieter sind:
-<br>
-ProtonVPN (Kann ich sehr empfehlen!)
-NordVPN
-Laden Sie eine dieser Apps aus dem Google Play Store herunter, erstellen Sie ein Konto und verbinden Sie sich mit einem sicheren Server.
-<br>
-<h2>4. Alternative Apps verwenden</h2>
-Viele Standard-Apps von Xiaomi und Google können durch datenschutzfreundlichere Alternativen ersetzt werden:
-<br>
-Browser: Verwenden Sie Firefox oder Brave statt Google Chrome.
-Massenger: Verwenden Sie Signal statt WhatsApp oder Telegram.
-Kalender: Verwenden Sie Simple Calendar oder den Kalender von fossily statt den Google Kalender.
-<h2>5. App-Berechtigungen überprüfen</h2>
-Überprüfen und beschränken Sie die Berechtigungen der Apps auf Ihrem Gerät:
-<br>
-Gehen Sie zu den Einstellungen.
-Tippen Sie auf „Apps“ und dann auf „App-Berechtigungen“.
-Überprüfen Sie die Berechtigungen jeder App und deaktivieren Sie unnötige Berechtigungen.
-<h2>6. Aktualisierungen und Sicherheits-Patches</h2>
-Halten Sie Ihr Gerät immer auf dem neuesten Stand, um die neuesten Sicherheitsupdates zu erhalten:
-<br>
-Gehen Sie zu den Einstellungen.
-Tippen Sie auf „Über das Telefon“.
-Wählen Sie „Systemupdates“ und überprüfen Sie, ob Updates verfügbar sind.
-<h2>7. Zusätzliche Sicherheitsmaßnahmen</h2>
-Bildschirmsperre: Richten Sie eine starke PIN, ein Passwort oder eine biometrische Sperre ein.
-Zwei-Faktor-Authentifizierung (2FA): Aktivieren Sie 2FA für alle Konten, die diese Option unterstützen.
-Sicherheits-Apps: Installieren Sie eine vertrauenswürdige Sicherheits-App wie Bitdefender oder Malwarebytes.
-Nutzen Sie einen sicheren Passwort Manager wie Proton Pass.
-Fazit
-Mit diesen Schritten können Sie die Sicherheit und den Datenschutz auf Ihrem Xiaomi-Smartphone erheblich verbessern. Obwohl es keine perfekte Sicherheit gibt, verringern diese Maßnahmen das Risiko erheblich und schützen Ihre persönlichen Daten.
-            
-          </p>
+            <h2>Dashboard</h2>
+            <input type="text" id="searchInput" onkeyup="searchLinks()" placeholder="Nach Hashtags suchen...">
+            <ul id="linkList">
+                <li><a href="link1.html" data-hashtags="#technik #news">Technik News</a></li>
+                <li><a href="link2.html" data-hashtags="#reviews #produkte">Produkt Reviews</a></li>
+                <li><a href="link3.html" data-hashtags="#analysen #markt">Marktanalyse</a></li>
+                <li><a href="link4.html" data-hashtags="#tipps #tricks">Tipps und Tricks</a></li>
+            </ul>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Kontaktieren Sie uns unter offdroid@example.com.</p>
         </section>
     </main>
     <footer>
